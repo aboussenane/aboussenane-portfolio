@@ -1,0 +1,129 @@
+.Title-header{
+    position: absolute;
+    
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    
+}
+.Header-circle{
+    display:none;
+}
+.Header-title{
+    position: relative;
+    
+    font-size: 1.5em;
+    margin: 10px;
+    margin-left: 0px;
+    font-weight: 200;
+    h2{
+        font-weight: 400;
+    }
+}
+.Title{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    overflow: hidden;
+    
+}
+.Title-circle{
+    display: flex;
+    position: relative;
+    border: 1px solid var(--secondary-color);
+    border-radius: 20em;
+    min-width: 10em;
+    min-height: 10em;
+    width: 18em;
+    height: 18em;
+    background-color: var(--secondary-color);
+    margin: 10px;
+}
+.Title-container{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    position: relative;
+    transform: translate(0%, 70%);
+    h1{
+        font-size: 20em;
+        font-weight: 400;
+        position: relative;
+        top: -20px;
+    }
+    
+}
+.Header-title-mobile{
+    display: none;
+}
+@media (max-width: 700px) {
+    .Header-title{
+        display: none;
+    }
+    .Title-header{
+        position: absolute;
+        
+        left: 0px;
+        top: -10px;
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        
+    }
+    .Title-container{
+        display: none;
+    }
+    .Header-circle{
+        display: flex;
+        position: relative;
+        border: 1px solid var(--secondary-color);
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        background-color: var(--secondary-color);
+        margin: 10px;
+        margin-left: 0px;
+    }
+    .Header-title-mobile{
+        position: relative;
+    display:flex;
+    font-size: 1.5em;
+    margin: 10px;
+    margin-left: 20px;
+    transform: translateY(550%);
+    h2{
+        font-weight: 400;
+    }
+    
+    }
+    .Projects{
+        display: flex;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100%;
+        flex-direction: column;
+        overflow-x: hidden;
+        h1{
+            position: relative;
+            font-size: 3em;
+            font-weight: 500;
+            margin: 10px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            left: 0px;
+            top: 0px;
+           
+            
+        }
+    }
+  }
+  /* Tablet and Smaller Desktop */
+  @media (min-width: 701px) and (max-width: 1120px) {
+    
+  }

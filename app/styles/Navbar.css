@@ -1,0 +1,185 @@
+.Navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 50px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 15px;
+    margin:20px;
+
+}
+.Navbar-icon{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: xx-large;
+    color: var(--secondary-color);
+}
+.Navbar-links-container{
+    position:absolute;
+    left:0;
+    transform: translate(-90%, 0);
+    width: 20vw;
+    height: 75vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--secondary-color);
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.Navbar-themes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 15px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin: 20px;
+    
+    
+}
+.Navbar-link{
+    font-size: 2.5em;
+    font-weight:500;
+    margin: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    
+}
+.Navbar-theme{
+    font-size: x-large;
+    margin: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    
+}
+.Navbar-banner {
+    overflow: hidden; /* Hide anything that goes out of this container */
+
+    white-space: nowrap; /* Keep all divs in a single line */
+
+    position: relative; /* Position context for the inner content */
+    width: 100%; /* Full width of the container */
+    display: flex;
+    flex-direction: column;
+}
+
+.Navbar-banner-text {
+    display: inline-block;
+    padding: 0 50px; /* Padding for aesthetics */
+    animation: scrollBanner 10s linear infinite; /* Adjust time for different speeds */
+}
+.Navbar-banner-divider {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--secondary-color);
+}
+.Navbar-socials{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    transform: translate(0, 100px);
+    
+    font-size: 1.0em;
+    margin: 10px;
+    font-weight: 500;
+    
+
+}
+.Navbar-social{
+    margin: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 1.0em;
+    font-weight: 500;
+}
+@keyframes scrollBanner {
+    0% {
+        transform: translateX(100%); /* Start from the right */
+    }
+    100% {
+        transform: translateX(-100%); /* End at the left */
+    }
+}
+/* Mobile */
+@media (max-width: 700px) {
+    .Navbar{
+        
+        top: 0px;
+        right: 0;
+        width: 100px;
+        height: 50px;
+        border: 1px solid var(--secondary-color);
+        border-radius: 15px;
+        margin: 20px;
+    
+    }
+    .Navbar-icon{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: xx-large;
+        color: var(--secondary-color);
+    }
+    .Navbar-links-container{
+        position:absolute;
+        left:0;
+        transform: translate(-90%, 0);
+        width: 75vw;
+        height: 75vh;
+        background-color: var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        border: 1px solid var(--secondary-color);
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    .Navbar-themes{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 20px;
+        border: 1px solid var(--secondary-color);
+        border-radius: 15px;
+        padding-top:20px;
+        padding-bottom:20px;
+        margin: 20px;
+        
+        
+    }
+    .Navbar-link{
+        font-size: 2.5em;
+        font-weight:400;
+        margin: 10px;
+        background-color: var(--primary-color);
+        border: none;
+        
+    }
+    .Navbar-theme{
+        font-size: x-large;
+        margin: 10px;
+        background-color: var(--primary-color);
+        border: none;
+        
+    }
+   
+  }
+  /* Tablet and Smaller Desktop */
+  @media (min-width: 701px) and (max-width: 1120px) {
+    
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    
+  }
