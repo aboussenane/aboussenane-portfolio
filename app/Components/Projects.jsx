@@ -1,21 +1,19 @@
+"use client"
+import React from 'react';
+import '../styles/Projects.css';
 
-import React, { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import '../styles/Project.css'
-import { BiGitRepoForked, BiLogoReact, BiLogoJavascript, BiSolidFileCss, BiLogoHtml5, BiLogoPostgresql, BiLogoTypescript, BiLogoNodejs } from 'react-icons/bi';
-import { SiVite, SiAmazonaws, SiAirbnb, SiElectron} from 'react-icons/si';
+function Projects({ url, imageUrl }) {
+  
 
-
-function Projects(url, imageUrl, description, title, techStack) {
- 
   return (
     <>
-        <div className="project-container">
-
-        </div>
+      <div className="project-container" >
+        <a href={url} target="_blank" rel="noreferrer" className="project-title">
+          <img src={imageUrl} alt="project image" className="project-image" />
+        </a>
+      </div>
     </>
-  )
+  );
 }
 
-export default Projects
+export default Projects;
