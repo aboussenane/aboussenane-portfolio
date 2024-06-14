@@ -92,9 +92,18 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  
+  scrollbar-color: var(--secondary-color) var(--primary-color); /* thumb and track colors */
+    scrollbar-width: thin; /* Can be 'auto', 'thin', or 'none' */
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar-track {
+  background: var(--primary-color); /* Light grey background */
 }
 
+/* Styling the scrollbar thumb (the part that is draggable) */
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color); /* Dark grey thumb */
+}
 
 
 a {

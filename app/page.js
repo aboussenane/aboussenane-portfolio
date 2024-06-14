@@ -5,6 +5,7 @@ import styles from "./page.module.css";
 import Navbar from "./Components/Navbar";
 import Projects from "./Components/Projects";
 import "./styles/Home.css";
+import Footer from "./Components/Footer";
 export default function Home() {
   //https://www.zero.nyc/
   const projects = [
@@ -71,14 +72,14 @@ export default function Home() {
   return (
     <main className={styles.main}>
     <Navbar />
-      <div className="Title-header">  
+      <div id="home" className="Title-header">  
         <div className="Header-circle">
         </div>
         <div className="Header-title">
           <h2>ADEL BOUSSENANE | frontend developer.</h2>
         </div>  
       </div>
-     <section className="Title"> 
+     <section  className="Title"> 
       <div className="Title-container">
       <div className="Title-circle">
         </div>
@@ -93,7 +94,7 @@ export default function Home() {
         <source src="/rain-video.mp4" type="video/mp4" />
       </video>
     </section>
-    <section className="Projects">
+    <section id="projects" className="Projects">
     <h1 className="projects-title">SOME PROJECTS I'VE BUILT.</h1>
     <a href="https://booking-calendar-ten.vercel.app/" target="_blank" rel="noreferrer" className="project-title">
       <img src="./booking-calendar.PNG" className="feature-project">
@@ -101,12 +102,12 @@ export default function Home() {
       </a>
     <div className="feature-info">
       <h1>Booking Calendar</h1>
-      <p>A booking calendar that allows users to book appointments and view their bookings. Built with React, Javascript, and PostgreSQL.</p>
+      <p>A booking calendar that allows users to book appointments and view their bookings. <br/>Built with React, Javascript, and PostgreSQL.</p>
       <p><a href="https://booking-calendar-ten.vercel.app/" target="_blank" rel="noreferrer">View the project here</a>.</p>
     </div>
     
     <div className="projects-container">
-      <div className="projects-cell">
+      <div className="project-cell">
         {projects.map((project) => (
           <>
           <Projects key={project.title} {...project} />
@@ -122,7 +123,7 @@ export default function Home() {
       </div>
     
     </section>
-    <section className="Experience">
+    <section id="experience" className="Experience">
     <h1 className="experience-title">MY WORK EXPERIENCE.</h1>
     <div className="experience-container">
       {experience.map((item) => (
@@ -133,7 +134,9 @@ export default function Home() {
           <div className="experience-text">
             <h1>{item.title}</h1>
             <p>{item.duration}</p>
+            <div className="divider-horizontal"></div>
             <p>{item.description}</p>
+            <br/>
             <p>Tech Stack: {item.techStack.join(", ")}</p>
           </div>
         </div>
@@ -149,11 +152,12 @@ export default function Home() {
       </div>
     </section>
 
-    <section className="Contact">
+    <section id="contact" className="Contact">
       <h1 className="contact-title">GET IN TOUCH.</h1>
+      <div className="contact-grid">
         <a href="mailto:aboussenane@gmail.com?subject=Interest%20in%20Your%20Portfolio&body=Hi%20Adel%2C%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20am%20interested%20in%20discussing%20potential%20collaboration%20opportunities.%20Please%20let%20me%20know%20a%20convenient%20time%20to%20talk.%0D%0A%0D%0AThank%20you%2C%0D%0A%5BYour%20Name%5D" className="social">
           <div className="contact-container">
-            ABOUSSENANE@GMAIL.COM
+            EMAIL
           </div>
         </a>
         <a href="https://www.linkedin.com/in/adel-boussenane-28545317a/" className="social">
@@ -166,8 +170,9 @@ export default function Home() {
           GITHUB
           </div>
         </a>
+      </div>
     </section>
-      
+    <Footer />
 
     </main>
   );

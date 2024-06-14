@@ -1,3 +1,13 @@
+
+.divider-horizontal{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondary-color);
+    margin: 10px auto;
+    
+}
 .Title-header{
     position: absolute;
     
@@ -72,6 +82,7 @@
     overflow-x: hidden;
     
     
+    
 }
 
 .projects-title{
@@ -97,28 +108,36 @@
     margin: 20px;
     margin-top: 5px;
 }
+
 .projects-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin: 20px;
-    width: 100%;
-    max-width: 1200px; /* Adjust this as necessary */
-    box-sizing: border-box;
+    position: relative;
+    
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    
+    margin: 10px;
+    margin-bottom: 0px;
+    width: 100vw;
+     
+    justify-content: flex-start; 
+    align-items: flex-start;
     }
     .project-cell{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         position: relative;
         width: 100%;
         height: 100%;
-        width: 100%; /* Takes the full width of the grid column */
+        margin-left: 20px;
+        margin-right: 20px;
         height: auto;
-    
+        
     }
 .projects-info{
     margin-bottom: 20px;
-    max-width: 300px;
+    margin-left: 10px;
+    min-width: 300px;
 }
 .Experience{
     display: flex;
@@ -202,10 +221,13 @@
     }
     .contact-container{
         position: relative;
-        transform: translateY(200%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         overflow: hidden;
         background-color: transparent;
-        
+        width: 100px;
+        height: 100px;
         
     }
     .Contact{
@@ -229,6 +251,12 @@
     text-align: center; /* Ensures text inside the link is centered */
     
     }
+    .contact-grid{
+        display: flex;
+        flex-direction: row;
+    }
+
+
 @media (max-width: 700px) {
     .Header-title{
         display: none;
@@ -278,7 +306,8 @@
         height: 100%;
         flex-direction: column;
         overflow-x: hidden;
-        
+        justify-content: none;
+        align-items: none;
         
     }
     .projects-title{
@@ -307,8 +336,19 @@
     .projects-container{
         display: flex;
         flex-direction: column;
-    grid-template-columns: none;
-    gap: none;
+    
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+        }
+        .project-cell{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin: 20px;
+            
         }
         .experience-container{
             display: flex;
@@ -318,6 +358,7 @@
         }
     .projects-info{
         margin-bottom: 20px;
+        max-width: 300px;
     }
     .Experience{
         display: flex;
@@ -394,14 +435,38 @@
             top: 0px;
     }
     .contact-container{
-        margin: 20px;
-        margin-top: 5px;
+        margin: 0px;
+        margin-top: 0px;
         width: 100%;
         height: 100px;
         border-radius: 25px;
         border: 1px solid var(--secondary-color);
         justify-self: start;
+        position: relative;
+        transform: translateY(0%);
+        transform: translate(-20px, 0%);
+        overflow: hidden;
+        background-color: transparent;
+        text-align: center;
+        
     }
+    .contact-grid{
+        flex-direction: column;
+    }
+    .social{
+        border: none;
+        margin: 20px;
+        margin-top: 10px;
+        border-radius: 25px;
+        width: 100%;
+        height: 100px;
+        display: block; /* Ensures the link behaves as a block for full-width clickable area */
+        width: 100%; /* Optional: makes the anchor cover the full width of its parent */
+        text-align: center; /* Ensures text inside the link is centered */
+    
+    } 
+
+    
   }
 @media (max-width:385px){
     .Header-title-mobile{

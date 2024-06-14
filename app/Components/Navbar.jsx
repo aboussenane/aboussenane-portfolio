@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from "react";
+import Link from 'next/link';
+
 import { PiHamburgerLight } from "react-icons/pi";
 import { RxCross1 } from "react-icons/rx";
 import '../globals.css'
@@ -37,10 +39,10 @@ function Navbar() {
             <RxCross1  className="Navbar-icon"  onClick={toggleOpen}/> 
             
             <div className="Navbar-links-container">
-                <a href="#projects" className="Navbar-link">PROJECTS</a>
-                <a href="#experience" className="Navbar-link">EXPERIENCE</a>
-                <a href="#about" className="Navbar-link">ABOUT</a>
-                <a href="#contact" className="Navbar-link">CONTACT</a>
+                <a href="#home" className="Navbar-link" onClick={toggleOpen}>HOME</a>
+                <a href="#projects" className="Navbar-link"  onClick={toggleOpen}>PROJECTS</a>
+                <a href="#experience" className="Navbar-link"  onClick={toggleOpen}>EXPERIENCE</a>
+                <a href="#contact" className="Navbar-link" onClick={toggleOpen}>CONTACT</a>
                 <div className="Navbar-themes">
                     <button className="Navbar-theme" onClick={() => changeTheme('light')}>🤍</button>
                     <button className="Navbar-theme" onClick={() => changeTheme('dark')}>🖤</button>
