@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { PiHamburgerLight } from "react-icons/pi";
 import { RxCross1 } from "react-icons/rx";
-import '../Globals.css'
+import '../globals.css'
 import '../styles/Navbar.css'
 function Navbar() {
     const [isOpen, setIsOpen] = useState(true);
