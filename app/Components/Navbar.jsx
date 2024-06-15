@@ -28,7 +28,7 @@ function Navbar() {
     };
     return (
         
-    <nav className="Navbar" >
+    <nav className="Navbar" onClick={toggleOpen} >
      
      
      {isOpen ? ( 
