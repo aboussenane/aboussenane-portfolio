@@ -1,13 +1,347 @@
 
-
+'use client';
 import Image from "next/image";
 import styles from "./page.module.css";
 import Navbar from "./Components/Navbar";
 import Projects from "./Components/Projects";
 import "./styles/Home.css";
 import Footer from "./Components/Footer";
+import { useEffect, useRef } from 'react';
+
 export default function Home() {
-  //https://www.zero.nyc/
+  const projectTitleRef = useRef(null);
+
+  useEffect(() => {
+    // Only execute this code in a client-side environment
+    if (typeof window !== "undefined" && window.IntersectionObserver) {
+      const observer = new IntersectionObserver(
+        
+        (entries) => {
+          entries.forEach(entry => {
+            
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { root: null,  // Defaults to the browser viewport if not specified
+        rootMargin: '0px',
+        threshold: 1  }
+      );
+
+      if (projectTitleRef.current) {
+        observer.observe(projectTitleRef.current);
+      }
+
+      return () => {
+        if (observer) observer.disconnect();
+      };
+    }
+  }, []);
+  const headTitleRef = useRef(null);
+
+  useEffect(() => {
+    // Only execute this code in a client-side environment
+    if (typeof window !== "undefined" && window.IntersectionObserver) {
+      const observer = new IntersectionObserver(
+        
+        (entries) => {
+          entries.forEach(entry => {
+            
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { root: null,  // Defaults to the browser viewport if not specified
+        rootMargin: '0px',
+        threshold: 1  }
+      );
+
+      if (headTitleRef.current) {
+        observer.observe(headTitleRef.current);
+      }
+
+      return () => {
+        if (observer) observer.disconnect();
+      };
+    }
+  }, []);
+  const titleRef = useRef(null);
+
+  useEffect(() => {
+    // Only execute this code in a client-side environment
+    if (typeof window !== "undefined" && window.IntersectionObserver) {
+      const observer = new IntersectionObserver(
+        
+        (entries) => {
+          entries.forEach(entry => {
+            
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { root: null,  // Defaults to the browser viewport if not specified
+        rootMargin: '0px',
+        threshold: 1  }
+      );
+
+      if (titleRef.current) {
+        observer.observe(titleRef.current);
+      }
+
+      return () => {
+        if (observer) observer.disconnect();
+      };
+    }
+  }, []);
+  const mobileTitleRef = useRef(null);
+
+  useEffect(() => {
+    // Only execute this code in a client-side environment
+    if (typeof window !== "undefined" && window.IntersectionObserver) {
+      const observer = new IntersectionObserver(
+        
+        (entries) => {
+          entries.forEach(entry => {
+            
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { root: null,  // Defaults to the browser viewport if not specified
+        rootMargin: '0px',
+        threshold: 1  }
+      );
+
+      if (mobileTitleRef.current) {
+        observer.observe(mobileTitleRef.current);
+      }
+
+      return () => {
+        if (observer) observer.disconnect();
+      };
+    }
+  }, []);
+  const featureRef = useRef(null);
+
+  useEffect(() => {
+    // Only execute this code in a client-side environment
+    if (typeof window !== "undefined" && window.IntersectionObserver) {
+      const observer = new IntersectionObserver(
+        
+        (entries) => {
+          entries.forEach(entry => {
+            
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { root: null,  // Defaults to the browser viewport if not specified
+        rootMargin: '0px',
+        threshold: 0.2  }
+      );
+
+      if (featureRef.current) {
+        observer.observe(featureRef.current);
+      }
+
+      return () => {
+        if (observer) observer.disconnect();
+      };
+    }
+  }, []);
+  const featureTitleRef = useRef(null);
+
+  useEffect(() => {
+    // Only execute this code in a client-side environment
+    if (typeof window !== "undefined" && window.IntersectionObserver) {
+      const observer = new IntersectionObserver(
+        
+        (entries) => {
+          entries.forEach(entry => {
+            
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { root: null,  // Defaults to the browser viewport if not specified
+        rootMargin: '0px',
+        threshold: 1  }
+      );
+
+      if (featureTitleRef.current) {
+        observer.observe(featureTitleRef.current);
+      }
+
+      return () => {
+        if (observer) observer.disconnect();
+      };
+    }
+  }, []);
+  const projectsRef = useRef(null);
+
+  useEffect(() => {
+    // Only execute this code in a client-side environment
+    if (typeof window !== "undefined" && window.IntersectionObserver) {
+      const observer = new IntersectionObserver(
+        
+        (entries) => {
+          entries.forEach(entry => {
+            
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { root: null,  // Defaults to the browser viewport if not specified
+        rootMargin: '0px',
+        threshold: 0.1  }
+      );
+
+      if (projectsRef.current) {
+        observer.observe(projectsRef.current);
+      }
+
+      return () => {
+        if (observer) observer.disconnect();
+      };
+    }
+  }, []);
+
+  const experienceRef = useRef(null);
+
+  useEffect(() => {
+    // Only execute this code in a client-side environment
+    if (typeof window !== "undefined" && window.IntersectionObserver) {
+      const observer = new IntersectionObserver(
+        
+        (entries) => {
+          entries.forEach(entry => {
+            
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { root: null,  // Defaults to the browser viewport if not specified
+        rootMargin: '0px',
+        threshold: 0.2 }
+      );
+
+      if (experienceRef.current) {
+        observer.observe(experienceRef.current);
+      }
+
+      return () => {
+        if (observer) observer.disconnect();
+      };
+    }
+  }, []);
+  const experienceTitleRef = useRef(null);
+
+  useEffect(() => {
+    // Only execute this code in a client-side environment
+    if (typeof window !== "undefined" && window.IntersectionObserver) {
+      const observer = new IntersectionObserver(
+        
+        (entries) => {
+          entries.forEach(entry => {
+            
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { root: null,  // Defaults to the browser viewport if not specified
+        rootMargin: '0px',
+        threshold: 0.2 }
+      );
+
+      if (experienceTitleRef.current) {
+        observer.observe(experienceTitleRef.current);
+      }
+
+      return () => {
+        if (observer) observer.disconnect();
+      };
+    }
+  }, []);
+
+  const testimonialsRef = useRef(null);
+
+  useEffect(() => {
+    // Only execute this code in a client-side environment
+    if (typeof window !== "undefined" && window.IntersectionObserver) {
+      const observer = new IntersectionObserver(
+        
+        (entries) => {
+          entries.forEach(entry => {
+            
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { root: null,  // Defaults to the browser viewport if not specified
+        rootMargin: '0px',
+        threshold: 0.2 }
+      );
+
+      if (testimonialsRef.current) {
+        observer.observe(testimonialsRef.current);
+      }
+
+      return () => {
+        if (observer) observer.disconnect();
+      };
+    }
+  }, []);
+
+  const testimonialsTitleRef = useRef(null);
+
+  useEffect(() => {
+    // Only execute this code in a client-side environment
+    if (typeof window !== "undefined" && window.IntersectionObserver) {
+      const observer = new IntersectionObserver(
+        
+        (entries) => {
+          entries.forEach(entry => {
+            
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { root: null,  // Defaults to the browser viewport if not specified
+        rootMargin: '0px',
+        threshold: 0.2 }
+      );
+
+      if (testimonialsTitleRef.current) {
+        observer.observe(testimonialsTitleRef.current);
+      }
+
+      return () => {
+        if (observer) observer.disconnect();
+      };
+    }
+  }, []);
   const projects = [
     {
       title: "Caeterra",
@@ -48,7 +382,7 @@ export default function Home() {
       imageUrl: "/",
     },
     {
-      title: "Ubineer - NLP/Regex developer Intern - 160 hours",
+      title: "Ubineer - NLP/Regex developer Intern",
       duration: "160 hours",
       description: "Created regex patterns to efficiently capture past and future natural language data. Utilized clean code principles which resulted in robust patterns which were utilized in production and LLM training. Took on a leadership role in which I held weekly team meetings to help train new interns.",
       techStack: ["Python", "Regex"],
@@ -75,17 +409,17 @@ export default function Home() {
       <div id="home" className="Title-header">  
         <div className="Header-circle">
         </div>
-        <div className="Header-title">
+        <div ref={headTitleRef}  className="Header-title" >
           <h2>ADEL BOUSSENANE | frontend developer.</h2>
         </div>  
       </div>
      <section  className="Title"> 
-      <div className="Title-container">
+      <div ref={titleRef} className="Title-container">
       <div className="Title-circle">
         </div>
       <h1>ADEL</h1>
       </div>
-      <div className="Header-title-mobile">
+      <div ref={mobileTitleRef} className="Header-title-mobile">
           <h2>ADEL BOUSSENANE | frontend developer.</h2>
         </div>  
     </section>
@@ -95,19 +429,19 @@ export default function Home() {
       </video>
     </section>
     <section id="projects" className="Projects">
-    <h1 className="projects-title">SOME PROJECTS I'VE BUILT.</h1>
+    <h1 ref={projectTitleRef} className="projects-title">SOME PROJECTS I'VE BUILT.</h1>
     <a href="https://booking-calendar-ten.vercel.app/" target="_blank" rel="noreferrer" className="project-title">
-      <img src="./booking-calendar.PNG" className="feature-project">
+      <img src="./booking-calendar.PNG" ref={featureRef} className="feature-project">
       </img>
       </a>
-    <div className="feature-info">
+    <div ref={featureTitleRef} className="feature-info">
       <h1>Booking Calendar</h1>
       <p>A booking calendar that allows users to book appointments and view their bookings. <br/>Built with React, Javascript, and PostgreSQL.</p>
       <p><a href="https://booking-calendar-ten.vercel.app/" target="_blank" rel="noreferrer">View the project here</a>.</p>
     </div>
     
-    <div className="projects-container">
-      <div className="project-cell">
+    <div ref={projectsRef} className="projects-container">
+      <div className="project-cell" >
         {projects.map((project) => (
           <>
           <Projects key={project.title} {...project} />
@@ -124,8 +458,8 @@ export default function Home() {
     
     </section>
     <section id="experience" className="Experience">
-    <h1 className="experience-title">MY WORK EXPERIENCE.</h1>
-    <div className="experience-container">
+    <h1 ref={experienceTitleRef} className="experience-title">MY WORK EXPERIENCE.</h1>
+    <div className="experience-container" ref={experienceRef} >
       {experience.map((item) => (
         <>
         
@@ -143,8 +477,8 @@ export default function Home() {
         </>
       ))}
       </div>
-      <h1 className="testimonials-title">TESTIMONIALS</h1>
-      <div className="testimonials-carousel">
+      <h1 ref={testimonialsTitleRef} className="testimonials-title">TESTIMONIALS</h1>
+      <div ref={testimonialsRef} className="testimonials-carousel">
         
         <img className="testimonials-image" src="/inwitFeedback.PNG" alt="Kiuloper Feedback" />
         <img className="testimonials-image" src="/ubineerFeedback.PNG" alt="Kiuloper Feedback" />
@@ -155,7 +489,7 @@ export default function Home() {
     <section id="contact" className="Contact">
       <h1 className="contact-title">GET IN TOUCH.</h1>
       <div className="contact-grid">
-        <a href="mailto:aboussenane@gmail.com?subject=Interest%20in%20Your%20Portfolio&body=Hi%20Adel%2C%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20am%20interested%20in%20discussing%20potential%20collaboration%20opportunities.%20Please%20let%20me%20know%20a%20convenient%20time%20to%20talk.%0D%0A%0D%0AThank%20you%2C%0D%0A%5BYour%20Name%5D" className="social">
+        <a href="mailto:aboussenane@gmail.com?subject=Interest%20in%20Your%20Portfolio&body=Hi%20Adel%2C%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20am%20interested%20in%20discussing%20potential%20collaboration%20opportunities.%20Please%20let%20me%20know%20a%20convenient%20time%20to%20talk.%0D%0A%0D%0AThank%20you%2C%0D%0A%5BYour%20Name%5D" className="social" target="_blank" rel="noopener noreferrer" className="social">
           <div className="contact-container">
             EMAIL
           </div>
