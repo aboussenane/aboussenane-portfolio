@@ -39,6 +39,7 @@
     align-items: center;
     height: 20px;
     border: 1px solid var(--secondary-color);
+    
     border-radius: 15px;
     padding-top:20px;
     padding-bottom:20px;
@@ -101,6 +102,15 @@
     border: none;
     font-size: 1.0em;
     font-weight: 500;
+    border-radius: 25px;
+    padding:0px;
+    
+}
+.Navbar-social:hover{
+    
+    transition: 0.1s;
+  
+    
 }
 @keyframes scrollBanner {
     0% {

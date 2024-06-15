@@ -5,8 +5,7 @@ width: 100%;
 border-radius: 25px;
 }
 .project-image:hover{
-    width: 100.5%;
-    height: 100.5%;
+    border: 1px solid var(--secondary-color);
     transition: 0.1s;
 }
 .project-image{
