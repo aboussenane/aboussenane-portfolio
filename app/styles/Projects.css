@@ -1,7 +1,7 @@
 .project-container{
 margin-bottom: 10px;
 width: 100%;
-
+position: relative;
 border-radius: 25px;
 }
 .project-image:hover{

@@ -10,8 +10,8 @@
   --beige:#eee1c6;
   --blue:#1d4289;
   --orange:#f68423;
-  --primary-color:var(--black);
-  --secondary-color:var(--white);
+  --primary-color:var(--blue);
+  --secondary-color:var(--orange);
   --mobile: 700px;
   --tablet: 1120px;
 }

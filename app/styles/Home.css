@@ -33,16 +33,13 @@
         font-weight: 400;
     }
 }
-.Header-title.visible {
-    opacity: 1;
-    animation: slideInFromLeft 1s forwards;  
-  }
+
 .Title{
     display: flex;
     flex-direction: column;
     position: relative;
     width: 100vw;
-    height: 70vh;
+    height: 100%;
     overflow: hidden;
     
 }
@@ -50,11 +47,10 @@
     display: flex;
     position: relative;
     border: 1px solid var(--secondary-color);
-    border-radius: 20em;
-    min-width: 10em;
-    min-height: 10em;
-    width: 18em;
-    height: 18em;
+    border-radius: 500px;
+    width: min(10vw, 10vh); /* Adjust the value as needed */
+    height: min(10vw, 10vh);
+    
     background-color: var(--secondary-color);
     margin: 10px;
 }
@@ -73,13 +69,15 @@
     }
     
 }
-.Title-container.visible {
-    opacity: 1;
-    animation: slideInFromBottom 1s forwards;  
-  }
 .Header-title-mobile{
     display: none;
     opacity: 0;
+}
+.avatar-image{
+    width: min(90vw, 90vh); /* Adjust the value as needed */
+    height: min(90vw, 90vh);
+    border-radius: 500px;
+    
 }
 .Projects{
     display: flex;
@@ -132,76 +130,74 @@
   }
 .projects-title{
     position: relative;
-        font-size: 5em;
+        font-size: 3em;
         font-weight: 500;
-        margin: 10px;
+        margin: 20px;
         margin-top: 40px;
         margin-bottom: 40px;
         left: 0px;
         top: 0px;
-        visibility: hidden;
-        opacity: 0;
         
-        transition: opacity 0.3s, transform 0.3s;
+       
+        
 }
-.projects-title.visible {
-    opacity: 1;
-    animation: slideInFromLeft 1s forwards;  
-  }
+.feature-project-container{
+
+    display: flex;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100%;
+    flex-direction: column;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
 .feature-project{
     position: relative;
-    width: 90vw;
+    width: 50vw;
     max-width: 900px;
     border-radius: 25px;
     margin: 20px;
     margin-bottom: 5px;
-    opacity: 0;
-  
+    
+    
 }
 .feature-project:hover{
     border: 1px solid var(--secondary-color);
     transition: 0.1s;
 }
-.feature-project.visible{
-    opacity: 1;
-    animation: slideInFromLeft 1s forwards; 
-}
+
 .feature-info{
     margin: 20px;
     margin-top: 5px;
     opacity: 0;
 }
-.feature-info.visible{
-    opacity: 1;
-    animation: slideInFromBottomAlt 1s forwards; 
-}
+
 .projects-container{
     position: relative;
-    
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Optional: adds space between grid items */
     margin: 10px;
     margin-bottom: 0px;
-    width: 100vw;
-    opacity: 0;
-    justify-content: flex-start; 
-    align-items: flex-start;
+    
+  
+   
     
 }
-.projects-container.visible{
-    opacity: 1;
-    animation: slideInFromBottomAlt 1s forwards; 
-}
+
     .project-cell{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         position: relative;
+        
         width: 100%;
         height: 100%;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
         height: auto;
         
     }
@@ -222,10 +218,7 @@
     
     
 }
-.experience-container.visible{
-    opacity: 1;
-    animation: slideInFromBottomAlt 1s forwards; 
-}
+
 .experience-title{
     position: relative;
         font-size: 3em;
@@ -235,12 +228,9 @@
         margin-bottom: 40px;
         left: 0px;
         top: 0px;
-        opacity: 0;
+       
 }
-.experience-title.visible{
-    opacity: 1;
-    animation: slideInFromLeft 1s forwards; 
-}
+
 .experience-info{
     margin-bottom: 20px;
     border: 1px solid var(--secondary-color);
@@ -258,46 +248,47 @@
     margin: 20px;
     opacity:0;
 }
-.testimonials-carousel{
+.testimonials-container{
         
         display: flex;
         position: relative;
         top: 0px;
         left: 0px;
-        flex-direction: row;
-        width: 100vw;
-        height: 300px;
+        flex-direction:column;
+        max-width: 100vw;
+        height: 100%;
         opacity: 0;
-        
-        overflow-x: auto;
+        margin-left: 20px;
+        overflow-x: hidden;
         overflow-y: hidden;
     }
-    .testimonials-carousel.visible{
-        opacity: 1;
-        animation: slideInFromBottomAlt 1s forwards; 
-    }
-    .testimonials-image{
+    
+   
+
+    .testimonial-text{
         position: relative;
-        
+        width: 100%;
         height: 100%;
-        border-radius: 25px;
-        margin-left: 20px;
-        margin-right: 20px;
+        
+        margin: auto 0;
+        margin-bottom: 20px;
+        
     }
     .testimonials-title{
         position: relative;
-            font-size: 2em;
+            font-size: 3em;
             font-weight: 500;
             margin: 20px;
             margin-top: 40px;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             left: 0px;
             top: 0px;
-            opacity: 0;
     }
-    .testimonials-title.visible{
-        opacity: 1;
-        animation: slideInFromLeft 1s forwards; 
+
+    .testimonial-quote{
+        font-size: 1.5em;
+            font-weight: 500;
+            margin-bottom: 5px;
     }
     .contact-title{
         position: relative;
@@ -397,10 +388,7 @@
     }
     
     }
-    .Header-title-mobile.visible {
-        opacity: 1;
-        animation: slideInFromLeft 1s forwards;  
-      }
+
     .Projects{
         display: flex;
         position: relative;
@@ -426,10 +414,11 @@
     }
     .feature-project{
         position: relative;
-        width: 304px;
+        width: 100%;
         height: 450px;
-        border-radius: 25px;
-        margin: 20px;
+        border-radius: 35px;
+        margin: auto;
+        padding: 10px;
         margin-bottom: 5px;
         
     }
@@ -496,35 +485,35 @@
     .experience-text{
         margin: 20px;
     }
-    .testimonials-carousel{
+    .testimonials-container{
         
         display: flex;
         position: relative;
         top: 0px;
         left: 0px;
-        flex-direction: row;
+        flex-direction: column;
         width: 100vw;
-        height: 300px;
+        height: 100%;
         
         
         overflow-x: auto;
         overflow-y: hidden;
     }
-    .testimonials-image{
+    .testimonial-text{
         position: relative;
         
         height: 100%;
-        border-radius: 25px;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin: auto 0;
+        margin-bottom: 20px;
     }
     .testimonials-title{
-        position: relative;
-            font-size: 2em;
+        
+            position: relative;
+            font-size: 3em;
             font-weight: 500;
             margin: 20px;
             margin-top: 40px;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             left: 0px;
             top: 0px;
     }
@@ -541,32 +530,31 @@
     .contact-container{
         margin: 0px;
         margin-top: 0px;
-        width: 100%;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         border-radius: 25px;
         border: 1px solid var(--secondary-color);
         justify-self: start;
         position: relative;
         transform: translateY(0%);
-        transform: translate(-20px, 0%);
+        transform: translate(-0px, 0%);
         overflow: hidden;
         background-color: transparent;
         text-align: center;
         
     }
     .contact-grid{
-        flex-direction: column;
+        flex-direction: row;
     }
     .social{
         border: none;
-        margin: 20px;
+        margin:10px;
         margin-top: 10px;
         border-radius: 25px;
-        width: 100%;
-        height: 100px;
-        display: block; /* Ensures the link behaves as a block for full-width clickable area */
-        width: 100%; /* Optional: makes the anchor cover the full width of its parent */
-        text-align: center; /* Ensures text inside the link is centered */
+        width: 80px;
+        height: 80px;
+       
+        text-align: center; 
     
     } 
 
