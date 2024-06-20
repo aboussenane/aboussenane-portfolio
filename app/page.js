@@ -11,13 +11,18 @@ import { useEffect, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 //Typography
 //3d element
-//sliders for themes
 //full size nav
 //splash screen
 //sound fx
 //skills table with progress bars
-//background animation
 
+function applyCSS() {
+  const property = document.getElementById('cssProperty').value;
+  const value = document.getElementById('cssValue').value;
+  if (property && value) {
+      document.querySelector('.target').style.setProperty(property, value);
+  }
+}
 const slidingTitle = {
   hidden: { opacity: 0, x: -50 },
   visible: (i) => ({
@@ -210,7 +215,7 @@ export default function Home() {
     >
       <h1>Booking Calendar</h1>
       <p>A booking calendar that allows users to book appointments and view their bookings. <br/>Built with React, Javascript, and PostgreSQL.</p>
-      <p><a href="https://booking-calendar-ten.vercel.app/" target="_blank" rel="noreferrer">View the project here</a>.</p>
+      
     </motion.div>
     </div>
     <motion.div className="projects-container"
@@ -307,7 +312,10 @@ export default function Home() {
           </div>
         </a>
       </div>
+
     </section>
+    
+    
     <Footer />
 
     </main>

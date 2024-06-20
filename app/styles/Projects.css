@@ -7,6 +7,7 @@ border-radius: 25px;
 .project-image:hover{
     border: 1px solid var(--secondary-color);
     transition: 0.1s;
+    cursor: crosshair;
 }
 .project-image{
     

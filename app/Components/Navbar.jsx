@@ -8,17 +8,19 @@ import '../globals.css'
 import '../styles/Navbar.css'
 function Navbar() {
     const [isOpen, setIsOpen] = useState(true);
+    const [secondaryColor, setSecondaryColor] = useState({ r: 255, g: 255, b: 255 });
     const toggleOpen = () => {
         setIsOpen(!isOpen);
       };
     const changeTheme = (theme) => {
         // Define themes as objects with CSS properties
         const themes = {
-            light: { '--primary-color': 'var(--white)', '--secondary-color': 'var(--black)' },
-            dark: { '--primary-color': 'var(--black)', '--secondary-color': 'var(--white)'},
-            goat: { '--primary-color': 'var(--beige)', '--secondary-color': 'var(--green)' },
-            liberty: { '--primary-color': 'var(--blue)', '--secondary-color': 'var(--orange)' },
-            candy: { '--primary-color': '#ff4785', '--secondary-color': '#fddde6' }
+            light: { '--primary-color': 'var(--white)', '--secondary-color': 'var(--black)','--background-image': 'none' },
+            dark: { '--primary-color': 'var(--black)', '--secondary-color': 'var(--white)','--background-image': 'none'},
+            goat: { '--primary-color': 'var(--beige)', '--secondary-color': 'var(--green)', '--background-image': 'none'},
+            liberty: { '--primary-color': 'var(--blue)', '--secondary-color': 'var(--orange)','--background-image': 'none' },
+            purple: { '--background-image': 'url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2diaWlwZDdqZnh2cXczN2Q1MXJ2MDJraDBhaG84a3FnMDdyZ3Y1MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ke8rUdqs9DPTuX87xb/giphy-downsized-large.gif)', '--secondary-color': 'var(--white)','--primary-color': 'transparent','--font': 'Times New Roman, Times, serif '}
+
         };
         // Apply the selected theme
         const selectedTheme = themes[theme];
@@ -26,9 +28,16 @@ function Navbar() {
             document.documentElement.style.setProperty(key, selectedTheme[key]);
         });
     };
+    const handleColorChange = (color, value) => {
+        const newColor = { ...secondaryColor, [color]: value };
+        setSecondaryColor(newColor);
+        const rgbColor = `rgb(${newColor.r}, ${newColor.g}, ${newColor.b})`;
+        document.documentElement.style.setProperty('--secondary-color', rgbColor);
+    };
+    
     return (
         
-    <nav className="Navbar" onClick={toggleOpen} >
+    <nav className="Navbar"  >
      
      
      {isOpen ? ( 
@@ -46,10 +55,35 @@ function Navbar() {
                 <div className="Navbar-themes">
                     <button className="Navbar-theme" onClick={() => changeTheme('light')}>🤍</button>
                     <button className="Navbar-theme" onClick={() => changeTheme('dark')}>🖤</button>
-                    <button className="Navbar-theme" onClick={() => changeTheme('goat')}>🐐</button>
-                    <button className="Navbar-theme" onClick={() => changeTheme('liberty')}>🗽</button>
-                    <button className="Navbar-theme" onClick={() => changeTheme('candy')}>🍭</button>
+                    <button className="Navbar-theme" onClick={() => changeTheme('purple')}>💜</button>
                 </div>
+                <div className="editor">
+                            <label>Red</label>
+                            <input
+                                type="range"
+                                min="0"
+                                max="255"
+                                value={secondaryColor.r}
+                                onChange={(e) => handleColorChange('r', e.target.value)}
+                            />
+                            <label>Green</label>
+                            <input
+                                type="range"
+                                min="0"
+                                max="255"
+                                value={secondaryColor.g}
+                                onChange={(e) => handleColorChange('g', e.target.value)}
+                            />
+                            <label>Blue</label>
+                            <input
+                                type="range"
+                                min="0"
+                                max="255"
+                                value={secondaryColor.b}
+                                onChange={(e) => handleColorChange('b', e.target.value)}
+                            />
+                        </div>
+
                 <div className="Navbar-banner">
                     <div className="Navbar-banner-divider"></div>
                     <div className="Navbar-banner-text">WELCOME TO MY PORTFOLIO</div>

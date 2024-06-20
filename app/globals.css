@@ -1,17 +1,16 @@
 :root {
   --max-width: 1100px;
   --border-radius: 25px;
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  --font: 'Roboto', sans-serif;
   --black:#000000;
   --white:#ffffff;
   --green: #00471b;
   --beige:#eee1c6;
-  --blue:#1d4289;
+  --blue:#e7e9f0fd;
   --orange:#f68423;
-  --primary-color:var(--blue);
-  --secondary-color:var(--orange);
+  --primary-color:transparent;
+  --secondary-color:var(--white);
+  --background-image:url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2diaWlwZDdqZnh2cXczN2Q1MXJ2MDJraDBhaG84a3FnMDdyZ3Y1MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ke8rUdqs9DPTuX87xb/giphy-downsized-large.gif);
   --mobile: 700px;
   --tablet: 1120px;
 }
@@ -86,6 +85,7 @@
   margin: 0;
   background-color: var(--primary-color);
   color: var(--secondary-color);
+  font-family: var(--font);
 }
 
 html,
@@ -95,15 +95,24 @@ body {
   scrollbar-color: var(--secondary-color) var(--primary-color); /* thumb and track colors */
     scrollbar-width: thin; /* Can be 'auto', 'thin', or 'none' */
     scroll-behavior: smooth;
-    font-family: var(--font-mono);
+    font-family: var(--font);
+    background-image: var(--background-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+    
 }
 ::-webkit-scrollbar-track {
   background: var(--primary-color); /* Light grey background */
+  cursor: crosshair;
 }
 
 /* Styling the scrollbar thumb (the part that is draggable) */
 ::-webkit-scrollbar-thumb {
   background: var(--secondary-color); /* Dark grey thumb */
+  cursor: crosshair;
 }
 
 
