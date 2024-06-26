@@ -5,7 +5,7 @@
 :root {
   --max-width: 1100px;
   --border-radius: 25px;
-  --font: 'Roboto', sans-serif;
+  --font: 'Rajdhani', sans-serif;
   --black:#000000;
   --white:#ffffff;
   --green: #00722c96;
@@ -105,7 +105,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     p{
-      font-family:"roboto", sans-serif;
+      font-family:'Roboto', sans-serif;
     }
     
     
