@@ -7,7 +7,7 @@ border-radius: 25px;
 .project-image:hover{
     border: 1px solid var(--secondary-color);
     transition: 0.1s;
-    cursor: crosshair;
+     
 }
 .project-image{
     
@@ -18,7 +18,7 @@ border-radius: 25px;
 }
 
 /* Mobile */
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     .project-container{
         
         width: 300px;

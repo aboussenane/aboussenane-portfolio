@@ -15,8 +15,8 @@ function Navbar() {
     const changeTheme = (theme) => {
         // Define themes as objects with CSS properties
         const themes = {
-            light: { '--primary-color': 'var(--white)', '--secondary-color': 'var(--black)','--background-image': 'none' },
-            dark: { '--primary-color': 'var(--black)', '--secondary-color': 'var(--white)','--background-image': 'none'},
+            light: { '--primary-color': 'var(--white)', '--secondary-color': 'var(--black)','--background-image': 'none', '--font':'Roboto, sans-serif' },
+            dark: { '--primary-color': 'var(--black)', '--secondary-color': 'var(--white)','--background-image': 'none', '--font':'Rajdhani, sans-serif'},
             goat: { '--primary-color': 'var(--beige)', '--secondary-color': 'var(--green)', '--background-image': 'none'},
             liberty: { '--primary-color': 'var(--blue)', '--secondary-color': 'var(--orange)','--background-image': 'none' },
             purple: { '--background-image': 'url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2diaWlwZDdqZnh2cXczN2Q1MXJ2MDJraDBhaG84a3FnMDdyZ3Y1MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ke8rUdqs9DPTuX87xb/giphy-downsized-large.gif)', '--secondary-color': 'var(--white)','--primary-color': 'transparent','--font': 'Times New Roman, Times, serif '}

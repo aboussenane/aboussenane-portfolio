@@ -1,17 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&display=swap');
+
 :root {
   --max-width: 1100px;
   --border-radius: 25px;
   --font: 'Roboto', sans-serif;
   --black:#000000;
   --white:#ffffff;
-  --green: #00471b;
+  --green: #00722c96;
   --beige:#eee1c6;
   --blue:#e7e9f0fd;
   --orange:#f68423;
-  --primary-color:transparent;
+  --primary-color:var(--black);
   --secondary-color:var(--white);
-  --background-image:url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2diaWlwZDdqZnh2cXczN2Q1MXJ2MDJraDBhaG84a3FnMDdyZ3Y1MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ke8rUdqs9DPTuX87xb/giphy-downsized-large.gif);
-  --mobile: 700px;
+  --background-image:none;
+  --mobile: 1000px;
   --tablet: 1120px;
 }
 
@@ -100,7 +104,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
+    p{
+      font-family:"roboto", sans-serif;
+    }
     
     
 }

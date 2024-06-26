@@ -11,7 +11,7 @@
 .Title-header{
     position: absolute;
     
-    z-index: 2;
+    
     left: 0px;
     top: 0px;
     display: flex;
@@ -47,10 +47,10 @@
     display: flex;
     position: relative;
     border: 1px solid var(--secondary-color);
-    border-radius: 500px;
-    width: min(10vw, 10vh); /* Adjust the value as needed */
+    border-radius: 50%;
+    width: min(10vw, 10vh); 
     height: min(10vw, 10vh);
-    
+    transition: width 0.5s, height 0.5s;
     background-color: var(--secondary-color);
     margin: 10px;
 }
@@ -163,7 +163,7 @@
     border-radius: 25px;
     margin: 20px;
     margin-bottom: 5px;
-    cursor: crosshair;
+     
     
 }
 .feature-project:hover{
@@ -314,7 +314,7 @@
     }
     .contact-container:hover{
         background-color: var(--secondary-color);
-        cursor: crosshair;
+         
         color: var(--primary-color);
         transition: 0.3s;
     }
@@ -345,7 +345,7 @@
     }
 
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     .Header-title{
         display: none;
     }

@@ -176,8 +176,8 @@ export default function Home() {
       <motion.div className="Title-circle"
       ref={titleCircleRef}
       transition={{ duration: 0.5 }}
-      initial={{ width:0, height: 0, opacity: 0, y: 300}}
-      animate={titleCircleRefInView ? {width: "min(30vw, 30vh)", height: "min(30vw, 30vh)", opacity: 1, y: 0}:{width: 0, height: 0, opacity: 0, y: 300}}
+      initial={{ width:"0vw", height: "0vh", opacity: 0, y: 300}}
+      animate={titleCircleRefInView ? {width: "min(30vw, 30vh)", height: "min(30vw, 30vh)", opacity: 1, y: 0}:{width: "0vw", height: "0vh", opacity: 0, y: 300}}
       >
         </motion.div>
         <AnimatedTitle title="ADEL" variant={slidingTitle}/>
