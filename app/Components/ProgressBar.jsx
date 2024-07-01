@@ -11,9 +11,9 @@ function Filler(props) {
 function ProgressBar(props) {
     const getGradientColor = (percentage) => {
         // Base RGB values for green and red
-        const baseRed = 255;
-        const baseGreen = 255;
-        const baseBlue = 100; 
+        const baseRed = 150;
+        const baseGreen = 150;
+        const baseBlue = 50; 
     
         // Calculate intermediate color based on percentage
         const red = percentage > 50 ? baseRed * (100 - percentage) / 50 : baseRed;
