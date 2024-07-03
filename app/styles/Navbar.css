@@ -91,16 +91,17 @@
 .Navbar-banner-divider {
     display: inline-block;
     margin-top: 10px;
-    margin-bottom: 10px;
+    
     border: 1px solid var(--secondary-color);
+    
 }
 .Navbar-socials{
     position: relative;
     display: flex;
     flex-direction: row;
-    
+    background-color: transparent;
     font-size: 1.0em;
-    margin: 10px;
+    
     font-weight: 500;
     
     
@@ -108,7 +109,7 @@
 }
 .Navbar-social{
     margin: 10px;
-    background-color: var(--primary-color);
+    background-color: transparent;
     border: none;
     font-size: 1.0em;
     font-weight: 500;
@@ -237,6 +238,7 @@
         position:fixed;
         left: 50%;
         top: 50%;
+        padding-top: 40px;
         transform: translate(-50%, -50%);
         width: 100vw;
         height: 100vh;
