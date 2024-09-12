@@ -97,6 +97,14 @@ function Home() {
 
   const projects = [
     {
+      title: "Booking-Calendar",
+      description:
+        "A booking calendar that allows users to book appointments and view their bookings.",
+      techStack: ["React", "Javascript", "NextJS","PostgreSQL"],
+      url: "https://booking-calendar-ten.vercel.app/",
+      imageUrl: "/booking-calendar.PNG",
+    },
+    {
       title: "Caeterra",
       description:
         "A landing page for an Ottawa based property managment company. Designed and implemented a simple site which showcases the buisness's services and accomplishements from start to finish.",
@@ -240,13 +248,13 @@ function Home() {
             />
             <div className="feature-project-container">
               <a
-                href="https://booking-calendar-ten.vercel.app/"
+                href="https://github.com/aboussenane/armoury-frontend"
                 target="_blank"
                 rel="noreferrer"
                 className="project-title"
               >
                 <motion.img
-                  src="./booking-calendar.PNG"
+                  src="./armoury.PNG"
                   className="feature-project"
                   ref={projectsTitleRef}
                   initial={{ x: -100, opacity: 0 }}
@@ -269,11 +277,10 @@ function Home() {
                 }
                 transition={{ duration: 0.5 }}
               >
-                <h1>Booking Calendar</h1>
+                <h1>Armoury</h1>
                 <p>
-                  A booking calendar that allows users to book appointments and
-                  view their bookings. <br />
-                  Built with React, Javascript, and PostgreSQL.
+                A full stack, cross-platform application that allows users to create, view, and manage inventory, as well as reservations. It's still under construction<br />
+                  Built with React-Native, Typescript, NodeJS and PostgreSQL.
                 </p>
               </motion.div>
             </div>
@@ -396,25 +403,25 @@ function Home() {
               <ProgressBar percentage={95} title="CSS" />
 
               <label htmlFor="react">React</label>
-              <ProgressBar percentage={85} title="React" />
+              <ProgressBar percentage={90} title="React" />
 
               <label htmlFor="javascript">Javascript</label>
               <ProgressBar percentage={85} title="Javascript" />
 
               <label htmlFor="python">Python</label>
-              <ProgressBar percentage={65} title="Python" />
+              <ProgressBar percentage={80} title="Python" />
 
               <label htmlFor="sql">SQL</label>
-              <ProgressBar percentage={40} title="SQL" />
+              <ProgressBar percentage={60} title="SQL" />
 
               <label htmlFor="cpp">C++</label>
               <ProgressBar percentage={30} title="C++" />
 
               <label htmlFor="tailwindcss">TailwindCss</label>
-              <ProgressBar percentage={25} title="TailwindCss" />
+              <ProgressBar percentage={70} title="TailwindCss" />
 
               <label htmlFor="typescript">Typescript</label>
-              <ProgressBar percentage={20} title="Typescript" />
+              <ProgressBar percentage={80} title="Typescript" />
 
               <label htmlFor="Juggling">Juggling</label>
               <ProgressBar percentage={10} title="Juggling" />
