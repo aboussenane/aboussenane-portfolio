@@ -92,6 +92,27 @@
     
     
 }
+.about-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+    word-break: normal;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.about-text{
+    max-width: 80%;
+    margin: 0px 0px 0px 0px;
+    
+    word-wrap: normal;
+    
+}
 @keyframes slideInFromLeft {
     0% {
       transform: translateX(-500px);
@@ -219,7 +240,16 @@
     
     
 }
-
+.about{
+    display: flex;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100%;
+    flex-direction: column;
+    overflow-x: hidden;
+}
 .experience-title{
     position: relative;
         font-size: 3em;
@@ -256,7 +286,8 @@
         top: 0px;
         left: 0px;
         flex-direction:column;
-        max-width: 100vw;
+        max-width: 80%;
+        word-break: break-all;
         height: 100%;
         opacity: 0;
         margin-left: 20px;
@@ -503,6 +534,18 @@
     .projects-info{
         margin-bottom: 20px;
         max-width: 300px;
+    }
+    .about{
+        display: flex;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100%;
+        flex-direction: column;
+        overflow-x: hidden;
+        
+        
     }
     .Experience{
         display: flex;

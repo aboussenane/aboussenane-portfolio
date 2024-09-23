@@ -240,6 +240,31 @@ function Home() {
               className="avatar-image"
             />
           </section>
+          <section id="experience" className="about">
+            
+            <AnimatedTitle
+              cName="testimonials-title"
+              title="ABOUT ME"
+              variant={slidingHeader}
+            />
+            <motion.div
+              className="about-container"
+              ref={mobileHeaderTitleRef}
+              initial={{ x: -100, opacity: 0 }}
+              animate={
+                mobileHeaderTitleInView
+                  ? { x: 0, opacity: 1 }
+                  : { x: -100, opacity: 0 }
+              }
+              transition={{ duration: 0.5 }}
+            >
+            <p className="about-text">Hi,<br/><br/>I'm a new grad from Douglas College's Comp Sci Diploma program. In the new year (2025), I intend to continue my studies online in pursuit of a bachelors degree from Western Governor's University.
+            I've been teaching myself web development since 2020 with my focus being on frontend. I'm currently looking for full or part-time employment. In my spare time, I like to practice Jiu Jitsu and play video games. I also make electronic music using Javascript. Feel free to have a listen below!<br/><br/>
+            Hope to hear from you soon,<br/><br/>Adel</p>
+            <iframe src="https://dittytoy.net/embed/1ed31040e5" style={{width:"80%", height:"554px", margin:"40px 0px 0px 0px", border:0}} frameborder="0" allowfullscreen></iframe>
+            </motion.div>
+            
+          </section>
           <section id="projects" className="Projects">
             <AnimatedTitle
               cName="projects-title"
