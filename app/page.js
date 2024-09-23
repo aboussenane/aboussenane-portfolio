@@ -240,7 +240,7 @@ function Home() {
               className="avatar-image"
             />
           </section>
-          <section id="experience" className="about">
+          <section id="about" className="about">
             
             <AnimatedTitle
               cName="testimonials-title"
