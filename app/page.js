@@ -273,7 +273,7 @@ function Home() {
             />
             <div className="feature-project-container">
               <a
-                href="https://github.com/aboussenane/armoury-frontend"
+                href="https://armoury-1.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
                 className="project-title"
