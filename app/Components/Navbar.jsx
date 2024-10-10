@@ -86,7 +86,7 @@ function Navbar() {
 
                 <div className="Navbar-banner">
                     <div className="Navbar-banner-divider"></div>
-                    <div className="Navbar-banner-text">WELCOME TO MY PORTFOLIO</div>
+                    <div className="Navbar-banner-text">CONTACT ME</div>
                     <div className="Navbar-banner-divider"></div>
                 </div>
                 <div className="Navbar-socials">

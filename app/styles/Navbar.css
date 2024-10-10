@@ -86,6 +86,7 @@
 .Navbar-banner-text {
     display: inline-block;
     padding: 0 50px; 
+    margin-top: 10px;
     animation: scrollBanner 10s linear infinite; 
 }
 .Navbar-banner-divider {
