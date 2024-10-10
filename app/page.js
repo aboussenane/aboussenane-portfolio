@@ -304,7 +304,7 @@ function Home() {
               >
                 <h1>Armoury</h1>
                 <p>
-                A full stack, cross-platform application that allows users to create, view, and manage inventory, as well as reservations. It's still under construction<br />
+                A full stack, cross-platform application that allows users to create, view, and manage inventory, as well as reservations. It's currently under construction. A test site is live <a href="https://armoury-1.vercel.app/">here.</a><br />
                   Built with React-Native, Typescript, NodeJS and PostgreSQL.
                 </p>
               </motion.div>
