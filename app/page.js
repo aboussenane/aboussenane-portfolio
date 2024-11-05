@@ -105,12 +105,12 @@ function Home() {
       imageUrl: "/booking-calendar.PNG",
     },
     {
-      title: "Caeterra",
+      title: "SpinGuru",
       description:
-        "A landing page for an Ottawa based property managment company. Designed and implemented a simple site which showcases the buisness's services and accomplishements from start to finish.",
-      techStack: ["React", "Javascript", "ChakraUI"],
-      url: "https://www.caeterra.ca/",
-      imageUrl: "/caeterra.PNG",
+        "SpinGuru is a web application designed to help users discover new music through setlist exploration. It analyzes DJ sets, live performances, and music mixes to extract track listings, allowing users to find songs they hear in mixes. Users can search by genre, artist, or style, and the app returns a curated list of tracks from various performances. Each track can be instantly previewed through YouTube integration, making it easy to discover and verify music. The application uses advanced search algorithms to find relevant setlists and provides an intuitive interface for browsing through track collections. Built with Next.js and leveraging YouTube's API, SpinGuru serves as a bridge between casual music discovery and professional DJ track identification.",
+      techStack: ["React", "Javascript", "NextJS","Shadcn"],
+      url: "https://www.spinguru.xyz/",
+      imageUrl: "/setlist.PNG",
     },
     {
       title: "Document Generator",

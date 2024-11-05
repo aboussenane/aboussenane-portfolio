@@ -1,4 +1,3 @@
-
 .divider-horizontal{
     display: flex;
     position: relative;
@@ -760,3 +759,65 @@
   @media (min-width: 701px) and (max-width: 1120px) {
     
   }
+
+.testimonials-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    max-width: 80%;
+    height: 100%;
+    opacity: 0;
+    margin-left: 20px;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    word-break: normal;
+}
+
+.testimonial-text {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto 0;
+    margin-bottom: 20px;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 1000px) {
+    .testimonials-container {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 90%;
+        max-width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        overflow-x: hidden;
+        word-wrap: break-word;
+    }
+
+    .testimonial-text {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0 0 20px 0;
+    }
+
+    .testimonial-quote {
+        font-size: 1.2em;
+        font-weight: 500;
+        margin-bottom: 5px;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 385px) {
+    .testimonial-quote {
+        font-size: 1em;
+    }
+
+    .testimonials-container {
+        width: 95%;
+        padding: 0 10px;
+    }
+}
