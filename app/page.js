@@ -259,9 +259,9 @@ function Home() {
               transition={{ duration: 0.5 }}
             >
             <p className="about-text">Hi,<br/><br/>I'm a new grad from Douglas College's Comp Sci Diploma program. In the new year (2025), I intend to continue my studies online in pursuit of a bachelors degree from Western Governor's University.
-            I've been teaching myself web development since 2020 with my focus being on frontend. I'm currently looking for full or part-time employment. In my spare time, I like to practice Jiu Jitsu and play video games. I also make electronic music using Javascript. Feel free to have a listen below!<br/><br/>
+            I've been teaching myself web development since 2020 with my focus being on frontend. I'm currently looking for full or part-time employment. In my spare time, I like to practice Jiu Jitsu and make electronic music.<br/><br/>
             Hope to hear from you soon,<br/><br/>Adel</p>
-            <iframe src="https://dittytoy.net/embed/1ed31040e5" style={{width:"80%", height:"554px", margin:"40px 0px 0px 0px", border:0, borderRadius: "5px"}} frameborder="0" allowfullscreen></iframe>
+            {/* <iframe src="https://dittytoy.net/embed/1ed31040e5" style={{width:"80%", height:"554px", margin:"40px 0px 0px 0px", border:0, borderRadius: "5px"}} frameborder="0" allowfullscreen></iframe> */}
             </motion.div>
             
           </section>
