@@ -166,7 +166,7 @@ function Home() {
       title: "BKL Consultants - Technician",
       duration: "June 2022 - present",
       description:
-        "Created various scripts to perform routine file management, data analyses and reporting. Programming apps to facilitate the engineering team workflow through API. Helping to research and ease transition of large databases onto new platforms with the help of API automations. Creating comprehensive operating procedures for equipment and software to ensure smooth functioning of all processes. Accessed remote equipment via SSH and HTTP request. Managed and set up FTP/SFTP servers.",
+        "Created various scripts to perform routine file management, data analyses and reporting. Programming apps to facilitate the engineering team workflow through use of automations. Helping to research and ease transition of large databases onto new platforms with the help of API automations. Creating comprehensive operating procedures for equipment and software to ensure smooth functioning of all processes. Accessed remote equipment via SSH and HTTP request. Managed and set up FTP/SFTP servers.",
       techStack: ["Python", "Node.JS", "Javascript", "Powershell"],
       imageUrl: "/",
     },
@@ -273,13 +273,13 @@ function Home() {
             />
             <div className="feature-project-container">
               <a
-                href="https://sharing.clickup.com/clip/p/t1257765/30c46810-eb0f-49fb-9298-425fa68fefe9/screen-recording-2024-10-10-08%3A10.webm"
+                href="https://armoury-next.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
                 className="project-title"
               >
                 <motion.img
-                  src="./armoury.PNG"
+                  src="./equipment.PNG"
                   className="feature-project"
                   ref={projectsTitleRef}
                   initial={{ x: -100, opacity: 0 }}
@@ -304,8 +304,8 @@ function Home() {
               >
                 <h1>Armoury</h1>
                 <p>
-                A full stack, cross-platform application that allows users to create, view, and manage inventory, as well as reservations. It's currently under construction. A test site is live <a href="https://armoury-1.vercel.app/">here.</a><br />
-                  Built with React-Native, Typescript, NodeJS and PostgreSQL.
+                A full stack, cross-platform application that allows users to create, view, and manage inventory, as well as reservations. It's currently under construction. A test site is live <a href="https://armoury-next.vercel.app/">here.</a><br />
+                  Built with React, Typescript, NextJS, NodeJS and PostgreSQL.
                 </p>
               </motion.div>
             </div>
